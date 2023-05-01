@@ -1,0 +1,74 @@
+body{
+ font-family: 'Varela Round', sans-serif;
+ margin: 1%;
+}
+ 
+p {
+ color: rgb(142, 120, 241);
+ width: 70%;
+}
+ 
+#title {
+ font-size: 200%;
+ font-family: 'Krona One', sans-serif;
+}
+ 
+input {
+ width: 20%;
+ margin: 2% 25% 2% 25%;
+ text-align: center;
+ padding: 1%;
+ font-size: 150%;
+}
+ 
+#input {
+ margin: 3% 30% 1% 30%;
+}
+ 
+#game {
+ width: 70%;
+ padding: 2%;
+ margin: 4% 15% 4% 15%;
+ background-color: rgb(209, 199, 255);
+ border: 3px solid rgb(209, 199, 255);
+}
+ 
+ 
+#game > div:nth-child(odd){
+ background-color: lightskyblue;
+}
+ 
+#board > div {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 2em;
+}
+ 
+#board{
+ display: grid;
+ width: 70%;
+ margin: 1% 15% 3% 15%;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 150px 150px 150px;
+ grid-gap: 3px;
+ padding: 1%;
+ border: 5px solid rgb(98, 192, 230);
+}
+ 
+.num {
+ margin: 1%;
+ background-color: rgb(204, 255, 255);
+}
+ 
+.click {
+ width: 20%;
+ font-size: 140%;
+ border: 3px solid rgb(98, 192, 230);
+ padding: 1%;
+ background: linear-gradient(
+ to right,
+ rgb(190, 245, 255),
+ rgb(179, 162, 255),
+ pink);
+}

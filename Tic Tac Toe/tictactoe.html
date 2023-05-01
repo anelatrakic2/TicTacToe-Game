@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Tic Tac Toe Game</title>
+   <link href="tictactoe.css" rel="stylesheet" type="text/css" />
+ 
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+ 
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+ </head>
+ <body>
+   <center><h1 id="title">Tic Tac Toe</h1></center>
+   <center><p>Directions: You are player "X". Enter your move in the box below. The computer will play against you as "O". A player wins if they get three of their marks in a row horizontally, vertically, or diagonally. If neither player has three in a row when the board is full, the game is a tie. Good luck!</p></center>
+ 
+   <form id="game">
+     <div id="score"></div>
+     <div id="board">
+       <div class="num box1">1</div>
+       <div class="num box2">2</div>         
+       <div class="num box3">3</div>
+       <div class="num box4">4</div>
+       <div class="num box5">5</div>
+       <div class="num box6">6</div>
+       <div class="num box7">7</div>
+       <div class="num box8">8</div>         
+       <div class="num box9">9</div>
+     </div>
+ 
+     <center> Enter which box is your move: <input type="text" id="input"> </center> <br/>
+ 
+     <center><input type="submit" value="Play Move" onclick="play()" class="click"></center>
+ 
+     <center><input type="reset" value="Reset Game" class="click" onclick="resetGame()"></center>
+ 
+   </form>
+   <script src="script.js"></script>
+ </body>
+</html>
